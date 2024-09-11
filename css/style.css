@@ -1,0 +1,91 @@
+*{
+    list-style-type: none;
+}
+body{
+    color: white;
+    background-color: rgb(3, 68, 87);
+}
+
+body h1{
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.principal .div{
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+}
+.saldo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+.boton{
+    background-color: white;
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+}
+.boton--dinero{
+    background-color: rgb(250, 172, 28);
+}
+.boton--dinero:hover{
+    background-color: rgb(197, 135, 20);
+    color: white;
+}
+.botonesDinero{
+    margin-top: 1rem;
+}
+.boton--green{
+    background-color:  rgb(53, 246, 53);
+}
+
+.boton--green:hover{
+    background-color:  rgb(33, 157, 33);
+    color: white;
+}
+
+.boton--red{
+    background-color: rgb(249, 78, 78);
+}
+
+.boton--red:hover{
+    background-color: rgb(186, 30, 30);
+    color: white;
+}
+
+.boton--blue{
+    background-color: rgb(125, 183, 245);
+}
+
+.boton--blue:hover{
+    background-color: rgb(66, 129, 197);
+    color: white;
+}
+
+.historiales{
+    display: flex;
+    justify-content:center;
+}
+
+.historiales div{
+    justify-content: center;
+    width: 30%;
+}
+.ingresos{
+    color: rgb(53, 246, 53);
+}
+.retiros{
+    color: rgb(249, 78, 78);
+}
+.pagos{
+    color: rgb(125, 183, 245);
+}
+

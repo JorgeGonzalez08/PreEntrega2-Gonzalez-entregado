@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Practicas JS</title>
+</head>
+<body>
+    <h1>Bancoder</h1>
+    <section class="principal">
+        <div class="saldo div">
+            <p>Saldo $<span id="accountBalance">0.00</span></p>
+        </div>
+        <div class="div">
+            <p id="money">$ 0.00</p>
+            <input class="boton boton--dinero" id="buttonOne" type="submit" value="50">
+            <input class="boton boton--dinero" id="buttonTwo" type="submit" value="100">
+            <input class="boton boton--dinero" id="buttonThree" type="submit" value="500">
+            <input class="boton boton--dinero" id="buttonFour" type="submit" value="1000">
+            <div class="botonesDinero">
+                <button class="boton boton--green" id="deposit" type="submit">Ingresar</button>
+                <button class="boton boton--red" id="withdraw" type="submit">Retirar</button>
+            </div>
+        </div>
+        <div class="div">
+            <h2>Pago de servicios</h2>
+            <form action="" id="payForm">
+                <label for="payName">Descripcion</label>
+                <input type="text" name="payName" id="payName" placeholder="Ej: Pago de internet"><br>
+                <label for="payCant">Cantidad a pagar</label>
+                <input type="number" name="payCant" id="payCant" min="1" placeholder="Ej. 500"><br>
+                <input class="boton boton--blue" type="submit" id="paySubmit" value="Pagar">
+            </form>
+        </div>
+    </section>
+    <section class="historiales">
+        <div>
+            <h2>Historial de ingresos</h2>
+            <ul id="historyDeposits">
+
+            </ul>
+            <p class="ingresos">Total: <span id="totalDeposits">$0.00</span></p>
+        </div>
+        <div>
+            <h2>Historial de retiros</h2>
+            <ul id="historyWithdraws">
+
+            </ul>
+            <p class="retiros">Total: <span id="totalWithdraws">$0.00</span></p>
+        </div>
+        <div>
+            <h2>Historial de pagos</h2>
+            <ul id="historyPayments">
+
+            </ul>
+        </div>
+    </section>
+    <!--====== Conexion con el archivo de javascript ======-->    
+    <script src="./js/index.js"></script>
+</body>
+</html>
